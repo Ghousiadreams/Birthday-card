@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Chicle", serif;
+}
+
+body {
+    background: #eaf6ff;
+}
+
+.card {
+    height: 30rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-card {
+    height: 25rem;
+    width: 18rem;
+    color: black;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    border: 2px solid black;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    cursor: pointer;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(0rem);
+    }
+    to {
+        transform: translate(-18rem);
+    }
+}
+
+.happy-birthday {
+    position: relative; 
+    top: 1rem;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    height: 80%;
+}
+
+.happy-birthday p {
+    font-size: 1.5rem;
+}
+
+.image {
+    width: 100%;
+    height: 70%;
+    margin-top: 2rem;
+}
+
+.image-scale {
+    width: 100%;
+    height: 70%;
+    margin-top: 2rem;
+    animation: large 2s 0s infinite;
+}
+
+@keyframes large {
+    from{
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.back-card {
+    height: 25rem;
+    width: 18rem;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    border: 2px solid black;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 10px 10px black;
+}
+
+.wish {
+    position: relative; 
+    top: 3rem;
+    height: 80%;
+    width: 75%;
+    letter-spacing: 0.2rem;
+    font-size: 1.3rem;
+}
+
+.happy-birthday p {
+    font-size: 1.5rem;
+}
+
+.moved-back {
+    transform: translate(18rem) rotateY(0deg);
+    transition: all 1s ease-in-out;
+}
+
+.moved {
+    transform: translate(0rem) rotateY(180deg);
+    transition: all 1s ease-in-out;
+}
+
+.card {
+  transform: rotate(-5deg);
+  transform-origin: bottom right;
+}
